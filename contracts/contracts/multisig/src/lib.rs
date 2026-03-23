@@ -4,7 +4,7 @@ mod test;
 
 use soroban_sdk::{
     contract, contractimpl, contracttype, contracterror,
-    Address, Env, String, Vec, Map,
+    Address, Env, String, Vec,
     symbol_short, token,
 };
 
@@ -16,7 +16,8 @@ const TIMEOUT_LEDGERS: u32 = 17_280;
 /// Maximum number of required signatures allowed.
 const MAX_REQUIRED_SIGS: u32 = 10;
 
-/// Minimum amount (in base units) that requires multi-sig.
+/// Minimum amount (in base units) that requires multi-sig (not yet enforced).
+#[allow(dead_code)]
 const MULTISIG_THRESHOLD: i128 = 1_000_0000000; // 1000 tokens
 
 // ─── Storage Keys ─────────────────────────────────────────────────────────────

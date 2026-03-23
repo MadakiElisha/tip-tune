@@ -4,7 +4,7 @@ use super::*;
 use soroban_sdk::{
     testutils::{Address as _, Ledger, LedgerInfo},
     token::StellarAssetClient,
-    Address, Env, String,
+    Address, Env,
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
